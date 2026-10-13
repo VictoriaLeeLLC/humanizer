@@ -4,12 +4,12 @@ description: |
   Rewrite AI-sounding text so it reads like the writer without changing what it says.
   Use when editing or reviewing prose for AI tells: not-X-but-Y contrasts, one-line
   closers, staged openers, forced triads, dashes everywhere, inflated claims, sales
-  language, stock AI words, bold labels, or filler, and in long manuscripts for refrains,
+  language, stock AI words, bold labels, coach-speak imperatives, or filler, and in long manuscripts for refrains,
   disclaimers, templates, and placeholders repeated across chapters. Based on Wikipedia's
   "Signs of AI writing" and on audits of book manuscripts.
 license: MIT
 metadata:
-  version: "3.1.0-vll.1"
+  version: "3.1.0-vll.2"
 ---
 
 # Humanizer: remove AI writing patterns
@@ -27,6 +27,7 @@ A language model writes whatever is most likely to come next, so by default it m
 - **Leftovers.** Chat wrappers and drafting moves that were never meant for the reader.
 - **Wrong reader.** A reply re-explains background the other person already has, so the decision arrives last.
 - **One prompt, many sections.** A long manuscript repeats the same refrain, disclaimer, or section template in every chapter.
+- **Firmness by formula.** Advice told to be direct borrows a coach's stock moves, such as "say it once" or "name the one thing", that fit any reader.
 
 Word habits change with every model release. The structural habits above persist, so they lead the list below.
 
@@ -472,6 +473,32 @@ A model writes each chapter from a similar prompt, so a book repeats moves that 
 > The investigator used OSINT (information gathered from publicly available sources) to check the subject's accounts. She then filed a motion to suppress (a legal request asking the court to exclude improperly obtained evidence) the footage.
 **After:**
 > The investigator checked the subject's accounts using open-source intelligence, meaning only what is publicly available. She then filed a motion to suppress the footage.
+
+## H. Advice written to sound decisive
+
+When a model is told to be direct or to give the reader something to do, it reaches for a small stock of coaching moves. Each one sounds firm and could be given to anyone, about anything. These apply to instructions, prompts, tips, calls to action, and any second-person advice.
+
+### 36. Coach imperatives
+
+**Watch for:** say it once; say it out loud; say it plainly; name it; name the thing; call it what it is; say the hard thing; have the hard conversation; in one sentence; and stop there; and say nothing more; and leave it at that; full stop; no explanation needed; the one thing; the real version; own it; show up; do the work; start small; just start.
+**Problem:** The instruction is about the manner of an act (plainly, once, aloud, without explaining) and leaves the act empty, so it fits every situation and tells the reader nothing about this one. The clipped limit ("once", "and stop there") is the one-line closer of §2 folded into the sentence. Say what to do and to whom, in words that only fit this case. Keep "once" or "aloud" when the count or the speaking is the literal content of the step, as in a recipe or a script.
+**Before:**
+> Name what you want. Say it once, plainly, and stop there.
+**After:**
+> Ask your manager for the Tuesday shift.
+**Before:**
+> Have the hard conversation and say the real version out loud.
+**After:**
+> Tell your brother you cannot lend him the money this year.
+
+### 37. One of everything
+
+**Watch for:** one thing, one person, one moment, one step, one choice, one small act, one sentence, the one thing that; a set of instructions where a third or more contain "one"; every instruction built as an act plus a clipped second beat ("Do X and leave Y.", "Do X before you Y.", "Do X, then stop.").
+**Problem:** "One" makes any vague act sound specific and achievable, so a model told to be concrete uses it in place of naming the act. Across a set of tips or prompts the quantifier and the two-beat shape become the template of §29. Name the object itself, so that no quantifier is needed, and let instructions differ in shape: some a single clause, some with a condition, some with a time or place. In a single instruction this is *weak alone*; count it across the set.
+**Before:**
+> Pick one thing you have been avoiding and take one small step on it today.
+**After:**
+> Open the tax letter.
 
 ## When not to act
 

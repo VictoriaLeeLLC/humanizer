@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.0-vll.2 (this fork)
+
+Added section H for advice written to sound decisive: #36 coach imperatives ("say it once", "name it", "and stop there") and #37 the "one thing / one step" quantifier and two-beat instruction template. Found when 294 card instructions written under this skill passed every check and still read as generated; the owner caught it. 37 patterns total.
+
 ## 3.1.0-vll.1 (this fork)
 
 Rebased the fork on upstream 3.1.0 and replaced the fork's 54-pattern prompt. Added section G, nine patterns (#27 to #35) for repetition across a long manuscript, condensed from the fork's former patterns 30 to 47. Dropped the former patterns 48 to 54 (quotas for added fragments, metaphors, tangents, and anecdotes) because they asked the editor to invent material; the Voice section now says to ask the writer instead. Getting past AI detectors is no longer a goal. 35 patterns total. The previous prompt is on branch `main` before this merge and at tag `pre-upstream-3.1`.
